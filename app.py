@@ -7,7 +7,7 @@ from core.faq_loader import load_faqs
 st.set_page_config(page_title="Customer Support Chatbot", page_icon="💬", layout="centered")
 
 st.title("💬 Customer Support Chatbot")
-st.caption("Ask anything about FakeCompany — hours, billing, orders, security, and more.")
+st.caption("Ask anything about Micah Inc. — hours, billing, orders, security, and more.")
 
 # Sidebar: filters and analytics toggle
 faq_df = load_faqs()
@@ -61,4 +61,3 @@ if prompt:
     st.session_state.messages.append({"role": "assistant", "content": result["answer"]})
 
 st.markdown("---")
-st.caption("Tip: Update `data/faqs.csv` with your own company FAQs to customize the bot.")
